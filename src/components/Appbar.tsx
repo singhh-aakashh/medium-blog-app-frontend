@@ -41,7 +41,7 @@ export const Appbar = () => {
     //     </div>
     //   </nav>
     // </div>
-    <div className="navbar px-4 border-b  md:px-16 py-4 bg-base-100">
+    <div className="navbar px-4 border-b  md:px-16 py-4 bg-gray-300">
   <div className="flex-1">
     <a className="btn btn-ghost text-2xl">Medium Blog</a>
   </div>
