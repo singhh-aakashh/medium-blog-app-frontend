@@ -12,7 +12,7 @@ const Blog = () => {
         404 not found
       </div>
     }
-    const {loading , blog} = useBlog(id);
+    const {loading , blog}:{loading:boolean,blog:any} = useBlog(id);
     // console.log(blog)
     if(loading){
         return <div>
