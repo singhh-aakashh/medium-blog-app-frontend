@@ -53,7 +53,7 @@ export const Appbar = () => {
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         <li><Link to={"/write"}>Write</Link></li>
-        <li><button>Logout</button></li>
+        <li><button onClick={logout}>Logout</button></li>
       </ul>
     </div>
   </div>
