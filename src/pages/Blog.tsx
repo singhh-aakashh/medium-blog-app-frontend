@@ -13,7 +13,7 @@ const Blog = () => {
       </div>
     }
     const {loading , blog} = useBlog(id);
-    console.log(blog)
+    // console.log(blog)
     if(loading){
         return <div>
           <Appbar/>
