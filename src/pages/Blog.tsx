@@ -4,6 +4,11 @@ import { Avatar } from "../components/BlogCard";
 import { Appbar } from "../components/Appbar";
 import { Skeleton } from "../components/Skeleton";
 
+interface blogType {
+  title:string,
+  content:string
+}
+
 const Blog = () => {
     const {id} = useParams()
     console.log(id)
@@ -12,7 +17,7 @@ const Blog = () => {
         404 not found
       </div>
     }
-    const {loading , blog}:{loading:boolean,blog:any} = useBlog(id);
+    const {loading , blog}:{loading:boolean,blog:blogType} = useBlog(id);
     // console.log(blog)
     if(loading){
         return <div>
