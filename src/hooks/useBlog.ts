@@ -4,7 +4,7 @@ import axios from "axios";
 
 export const useBlog = (blog_id:string) =>{
     const[loading,setLoading] = useState(true);
-    const[blog,setBlog]= useState({})
+    const[blog,setBlog]= useState<any>({})
     useEffect(()=>{
         axios.get(`${BACKEND_URL}/api/v1/blog/get/${blog_id}`,{
             headers:{
