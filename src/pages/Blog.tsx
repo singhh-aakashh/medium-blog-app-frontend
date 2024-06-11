@@ -4,7 +4,7 @@ import { Avatar } from "../components/BlogCard";
 import { Appbar } from "../components/Appbar";
 import { Skeleton } from "../components/Skeleton";
 import axios from "axios";
-import { DEV_URL } from "../config";
+import { BACKEND_URL, DEV_URL } from "../config";
 
 interface blogType {
   title:string,
@@ -23,7 +23,7 @@ const Blog = () => {
     }
     const deleteBlog =async()=>{
       try {
-     await axios.delete(`${DEV_URL}/api/v1/blog/delete/${id}`,{
+     await axios.delete(`${BACKEND_URL}/api/v1/blog/delete/${id}`,{
       headers:{
         Authorization:localStorage.getItem("token")
       }

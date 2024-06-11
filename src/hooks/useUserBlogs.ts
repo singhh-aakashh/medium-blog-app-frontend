@@ -20,7 +20,7 @@ export const useUserBlogs =() =>{
   const[loading,setLoading]=useState(true);
 
   useEffect(()=>{
-    axios.get(`http://127.0.0.1:8787/api/v1/blog/user/blogs`,{
+    axios.get(`${BACKEND_URL}/api/v1/blog/user/blogs`,{
         headers:{
             Authorization:localStorage.getItem("token")
         }
