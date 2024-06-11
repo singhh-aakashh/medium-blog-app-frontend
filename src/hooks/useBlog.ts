@@ -14,7 +14,7 @@ export const useBlog = (blog_id:string) =>{
             setBlog(res.data.blog)
             setLoading(false)
         } )
-        console.log(blog)
+        // console.log(blog)
     },[blog_id])
 
     return {loading,blog}
