@@ -12,7 +12,12 @@ interface blog{
     }[]
 }
 const initial={
-    "posts":[{"msg":"empty"}]
+    "posts":[{
+        id:"123",
+        title:"dummy",
+        content:"dummydata",
+        publishedDate:"01/01/0001"
+    }]
 }
 
 export const useUserBlogs =() =>{
