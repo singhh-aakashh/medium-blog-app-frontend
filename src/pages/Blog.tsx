@@ -4,7 +4,7 @@ import { Avatar } from "../components/BlogCard";
 import { Appbar } from "../components/Appbar";
 import { Skeleton } from "../components/Skeleton";
 import axios from "axios";
-import { BACKEND_URL, DEV_URL } from "../config";
+import { BACKEND_URL } from "../config";
 
 interface blogType {
   title:string,
